@@ -1,33 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
+import Greetings from './Greetings';
 
 function App() {
-  const student = [
-    {srno:1,name:'Shravani',marks:100},
-    {srno:2,name:'Rutuja',marks:95},
-    {srno:3,name:'Trusha',marks:100},
-    {srno:4,name:'Shardul',marks:81},
-    {srno:5,name:'Gaurav',marks:100},
-    {srno:6,name:'Ayush',marks:80}
-  ];
+  
   return (
-   <div>
-    <table border="1">
-      <tr>
-        <th>srno</th>
-        <th>name</th>
-        <th>marks</th>
-      </tr>
-      {student.map((singleElement)=>{
-      return <tr className={singleElement.marks===100?"color":"backgroundcolor"}>
-        <td>{singleElement.srno}</td>
-        <td>{singleElement.name}</td>
-        <td>{singleElement.marks}</td>
-      </tr>
- } )}
-    </table>
-
-   </div>
+   <Greetings/>
   );
 }
 
