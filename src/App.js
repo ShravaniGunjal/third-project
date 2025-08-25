@@ -3,11 +3,11 @@ import './App.css';
 
 function App() {
   const student = [
-    {srno:1,name:'Shravani',marks:85},
-    {srno:2,name:'Rutuja',marks:90},
-    {srno:3,name:'Trusha',marks:83},
+    {srno:1,name:'Shravani',marks:100},
+    {srno:2,name:'Rutuja',marks:95},
+    {srno:3,name:'Trusha',marks:100},
     {srno:4,name:'Shardul',marks:81},
-    {srno:5,name:'Gaurav',marks:82},
+    {srno:5,name:'Gaurav',marks:100},
     {srno:6,name:'Ayush',marks:80}
   ];
   return (
@@ -18,13 +18,13 @@ function App() {
         <th>name</th>
         <th>marks</th>
       </tr>
-      {student.map((singleElement)=>
-      <tr>
+      {student.map((singleElement)=>{
+      return <tr className={singleElement.marks===100?"color":"backgroundcolor"}>
         <td>{singleElement.srno}</td>
         <td>{singleElement.name}</td>
         <td>{singleElement.marks}</td>
       </tr>
-      )}
+ } )}
     </table>
 
    </div>
