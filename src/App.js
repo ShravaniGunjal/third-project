@@ -4,11 +4,13 @@ import Greetings from './Greetings';
 import { useState } from 'react';
 
 function App() {
-
+  const student = [
+ 'Shravani', 'Rutuja', 'Trusha', 'Gaurav', 'Shardul', 'Ayush', 'Anamika', 'Nikita', 'Apeksha', 'Ishwari'
+ ]
   return (
-   <div>
-    <Greetings name='Shravani'/>
-   </div>
+    <div>
+     <Greetings name={student}/>
+    </div>
   );
 }
 

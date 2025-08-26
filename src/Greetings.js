@@ -2,7 +2,9 @@ function Greetings(props){
 
 
 return(
-    <div>Hello {props.name}</div>
+    props.name.map((singleElement)=>{
+        return <div>Hello {singleElement}</div>
+    })
 )
 }
 export default Greetings;
