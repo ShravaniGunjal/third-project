@@ -1,11 +1,14 @@
 import logo from './logo.svg';
 import './App.css';
 import Greetings from './Greetings';
+import { useState } from 'react';
 
 function App() {
-  
+
   return (
-   <Greetings/>
+   <div>
+    <Greetings name='Shravani'/>
+   </div>
   );
 }
 

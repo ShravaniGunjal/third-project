@@ -1,8 +1,8 @@
-function Greetings(){
+function Greetings(props){
 
 
 return(
-<h1>Hello World</h1>
+    <div>Hello {props.name}</div>
 )
 }
 export default Greetings;
